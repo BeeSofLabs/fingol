@@ -20,6 +20,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    sourceSets {
+        main.res.srcDirs += ['src/main/res-activities',
+                             'src/main/res-fragment',
+                             'src/main/res-content',
+                             'src/main/res-row']
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
 }
 
 allprojects {
@@ -37,9 +51,16 @@ dependencies {
     // basic library
     implementation 'com.github.acan12:coconut:2.0.4'
     implementation 'com.github.acan12:coconut-ui:1.0.2-beta'
+    implementation 'com.jakewharton:butterknife:8.8.1'  // ButterKnife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1' // ButterKnife
     implementation 'com.google.dagger:dagger:2.4'
     annotationProcessor "com.google.dagger:dagger-compiler:2.4"
     implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    // RX
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.x.x'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
