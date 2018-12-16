@@ -12,5 +12,6 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         ButterKnife.bind(this)
+
     }
 }

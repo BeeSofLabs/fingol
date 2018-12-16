@@ -1,8 +1,12 @@
 package app.beelabs.fingol
 
 interface IConfig {
-    val API_BASE_URL: String get() = ""
-    val DEFAULT_LOADING: String get() = ""
+    companion object {
+        const val API_BASE_URL = "http://api.beelabs.com"
+        const val DEFAULT_LOADING = "Loading"
+    }
+
+
 
     // key api
 
