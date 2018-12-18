@@ -9,9 +9,12 @@
     <color name="color_green">#73dec5</color>
     <color name="color_blue">#0087b6</color>
     <color name="color_orange">#f7ce6b</color>
+    <color name="color_yellow">#fdb913</color>
     <color name="color_red">#d0386a</color>
     <color name="color_grey">#7a8c98</color>
+    <color name="color_grey_light">#626262</color>
     <color name="color_dark_grey">#9b9b9b</color>
     <color name="color_dark_green">#4b616a</color>
+    <color name="color_very_dark_grey">#4a4a4a</color>
 
 </resources>
