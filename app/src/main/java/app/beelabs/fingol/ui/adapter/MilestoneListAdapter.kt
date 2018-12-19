@@ -1,12 +1,14 @@
 package app.beelabs.fingol.ui.adapter
 
 import android.app.Activity
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import app.beelabs.fingol.R
+import app.beelabs.fingol.ui.activities.TaskDetailActivity
 import kotlinx.android.synthetic.main.row_milestone_task.view.*
 
 class MilestoneListAdapter(val activity: Activity, val list: List<Any>?) :
@@ -29,26 +31,25 @@ class MilestoneListAdapter(val activity: Activity, val list: List<Any>?) :
                 holder.date.setText("6");
                 holder.month.setText("Jan");
                 holder.logo.setImageResource(R.drawable.pie_chart_transfer);
-                return
             }
+
             1 -> {
                 holder.datetimeLayout.visibility = View.INVISIBLE
                 holder.logo.setImageResource(R.drawable.bpjs_transfer)
-                return
             }
+
             2 -> {
                 holder.date.text = "2"
                 holder.month.text = "Jan"
                 holder.logo.setImageResource(R.drawable.water_electric_transfer)
-                return
             }
+
             3 -> {
                 holder.logo.setImageResource(R.drawable.water_electric_transfer)
                 holder.date.text = "1"
                 holder.month.text = "Jan"
                 holder.title.text = "Top Up"
                 holder.title.setTextColor(activity.resources.getColor(R.color.color_green))
-                return
             }
 
             4 -> {
@@ -58,14 +59,14 @@ class MilestoneListAdapter(val activity: Activity, val list: List<Any>?) :
                 holder.month.text = "Des"
                 holder.title.text = "Payment Done"
                 holder.title.setTextColor(activity.resources.getColor(R.color.color_green))
-                return
             }
 
         }
 
         holder.actionDetail.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                Toast.makeText(activity, "Detail action", Toast.LENGTH_SHORT).show()
+                val intent = Intent(activity, TaskDetailActivity::class.java)
+                activity.startActivity(intent)
             }
         })
     }

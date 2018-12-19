@@ -17,13 +17,5 @@ class MilestoneTaskActivity : BaseActivity() {
         milestoneList.hasFixedSize()
         milestoneList.adapter = MilestoneListAdapter(this, null)
 
-//        val params: ViewGroup.LayoutParams = verticalLine.layoutParams
-//        val metrics: DisplayMetrics = resources.displayMetrics
-//        params.height = toPixels(3f * 120f, metrics).toInt()
-
     }
-
-//    private fun toPixels(dp: Float, metrics: DisplayMetrics): Float {
-//        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, metrics)
-//    }
 }
