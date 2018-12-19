@@ -6,18 +6,9 @@
         android:background="@color/color_white">
 
 
-    <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        <View
-                android:id="@+id/verticalLine"
-                android:layout_width="3dp"
-                android:layout_height="360dp"
-                android:paddingRight="20dp"
-                android:layout_marginLeft="45dp"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/vertical_dashline"/>
+    <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
 
 
         <android.support.v7.widget.RecyclerView
@@ -25,5 +16,5 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-    </FrameLayout>
+    <!--</FrameLayout>-->
 </android.support.constraint.ConstraintLayout>

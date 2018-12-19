@@ -1,42 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
+              android:layout_height="120dp"
               android:background="@android:color/transparent"
               android:orientation="horizontal"
-              android:paddingRight="24dp"
-              android:paddingTop="10dp"
-              android:paddingBottom="5dp">
+              android:paddingRight="24dp">
 
-    <LinearLayout
-            android:id="@+id/datetime_layout"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="11dp"
-            android:background="@drawable/rounded_border_red_fill_white"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
 
-        <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="6"
-                android:textColor="@color/color_red"
-                android:textSize="18sp"/>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <View
+                    android:id="@+id/verticalLineTop"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/vertical_dashline"/>
 
-        <TextView
-                android:id="@+id/month"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Jan"
-                android:textColor="@color/color_very_dark_grey"
-                android:textSize="12sp"/>
-    </LinearLayout>
+            <View
+                    android:id="@+id/verticalLineBottom"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/vertical_dashline"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/datetime_layout"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/rounded_border_red_fill_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+            <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="6"
+                    android:textColor="@color/color_red"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date"
+                    android:layout_centerHorizontal="true"
+                    android:text="Jan"
+                    android:textColor="@color/color_very_dark_grey"
+                    android:textSize="12sp"/>
+        </RelativeLayout>
+    </FrameLayout>
 
     <RelativeLayout
             android:id="@+id/detail_action"
@@ -44,7 +71,9 @@
             android:layout_height="100dp"
             android:background="@drawable/rounded_border_grey"
             android:paddingLeft="11dp"
-            android:paddingRight="14dp">
+            android:paddingRight="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
         <ImageView
                 android:id="@+id/logo"
