@@ -3,10 +3,41 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_alignParentTop="true">
 
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-              android:text="Task Detail"
-              android:gravity="center"
-              android:textSize="30sp"
-              android:textStyle="bold"/>
+        <RelativeLayout
+                android:id="@+id/back_action"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+            <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/left_arrow"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Done"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/color_white"/>
+    </FrameLayout>
+
+
+    <TextView
+            android:id="@+id/content_detail"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:text="Task Detail"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 </RelativeLayout>

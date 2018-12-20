@@ -5,8 +5,10 @@
     <color name="colorAccent">#D81B60</color>
 
 
+
     <color name="color_white">#fff</color>
     <color name="color_green">#73dec5</color>
+    <color name="color_green_toska">#008577</color>
     <color name="color_blue">#0087b6</color>
     <color name="color_orange">#f7ce6b</color>
     <color name="color_yellow">#fdb913</color>

@@ -9,7 +9,7 @@
     </style>
 
     <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/color_green_toska</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

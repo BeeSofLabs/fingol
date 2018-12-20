@@ -13,6 +13,8 @@ class MilestoneTaskActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_milestone_task)
 
+        title = "Milestone Task"
+
         milestoneList.layoutManager = LinearLayoutManager(this)
         milestoneList.hasFixedSize()
         milestoneList.adapter = MilestoneListAdapter(this, null)

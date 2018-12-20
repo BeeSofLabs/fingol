@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import app.beelabs.fingol.IConfig
 import app.beelabs.fingol.R
 import app.beelabs.fingol.ui.activities.TaskDetailActivity
 import kotlinx.android.synthetic.main.row_milestone_task.view.*
@@ -66,6 +67,7 @@ class MilestoneListAdapter(val activity: Activity, val list: List<Any>?) :
         holder.actionDetail.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 val intent = Intent(activity, TaskDetailActivity::class.java)
+                intent.putExtra(IConfig.KEY_TITLE_DETAIL, holder.title.text)
                 activity.startActivity(intent)
             }
         })
