@@ -1,4 +1,4 @@
-package app.beelabs.fingol
+package app.beelabs.sakuplus
 
 import org.junit.Test
 

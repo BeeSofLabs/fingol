@@ -1,4 +1,4 @@
-package app.beelabs.fingol
+package app.beelabs.sakuplus
 
 interface IConfig {
     companion object {

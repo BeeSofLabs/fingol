@@ -1,4 +1,4 @@
-package app.beelabs.fingol.ui.activities.i
+package app.beelabs.sakuplus.ui.activities.i
 
 import app.beelabs.com.codebase.base.IView
 

@@ -1,4 +1,4 @@
-package app.beelabs.fingol
+package app.beelabs.sakuplus
 
 import android.content.Context
 import app.beelabs.com.codebase.base.BaseApp

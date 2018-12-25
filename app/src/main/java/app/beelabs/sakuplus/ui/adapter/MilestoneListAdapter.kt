@@ -1,4 +1,4 @@
-package app.beelabs.fingol.ui.adapter
+package app.beelabs.sakuplus.ui.adapter
 
 import android.app.Activity
 import android.content.Intent
@@ -6,10 +6,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import app.beelabs.fingol.IConfig
-import app.beelabs.fingol.R
-import app.beelabs.fingol.ui.activities.TaskDetailActivity
+import app.beelabs.sakuplus.IConfig
+import app.beelabs.sakuplus.R
+import app.beelabs.sakuplus.ui.activities.FinanceInqueryActivity
 import kotlinx.android.synthetic.main.row_milestone_task.view.*
 
 class MilestoneListAdapter(val activity: Activity, val list: List<Any>?) :
@@ -66,7 +65,7 @@ class MilestoneListAdapter(val activity: Activity, val list: List<Any>?) :
 
         holder.actionDetail.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                val intent = Intent(activity, TaskDetailActivity::class.java)
+                val intent = Intent(activity, FinanceInqueryActivity::class.java)
                 intent.putExtra(IConfig.KEY_TITLE_DETAIL, holder.title.text)
                 activity.startActivity(intent)
             }
