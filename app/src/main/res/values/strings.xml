@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SakuPlus</string>
+
+    <string name="map_google_credential">AIzaSyAC52ScrQueqE1CXg6g1ikIL2VipAWOQMQ</string>
 </resources>

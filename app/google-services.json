@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1020851738405",
+    "firebase_url": "https://sakuplus-847ee.firebaseio.com",
+    "project_id": "sakuplus-847ee",
+    "storage_bucket": "sakuplus-847ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020851738405:android:4348f2fd6c7bec3a",
+        "android_client_info": {
+          "package_name": "app.beelabs.sakuplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020851738405-3p2d50eb9jm2hnko3bgq83n52t3n55pt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.beelabs.sakuplus",
+            "certificate_hash": "4854552a0ae9dadbc509d73c2c209b5d9da345b2"
+          }
+        },
+        {
+          "client_id": "1020851738405-9nht7bel4t4drimmoe8nk8hv1aq3s23r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX4IAGDtYBbZlDg2Q5mZKm5FspaH40FWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020851738405-9nht7bel4t4drimmoe8nk8hv1aq3s23r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
